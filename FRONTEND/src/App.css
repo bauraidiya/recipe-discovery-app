@@ -182,3 +182,7 @@
     border-right-color: var(--border);
   }
 }
+.recipe-img {
+  height: 190px;
+  object-fit: cover;
+}

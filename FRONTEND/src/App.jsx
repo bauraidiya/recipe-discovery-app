@@ -1,8 +1,11 @@
+import { Routes, Route } from "react-router-dom";
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import Navbar from "./components/Navbar.jsx";
+import Home from "./pages/Home.jsx";
+import NewRecipe from "./pages/NewRecipe";
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +13,11 @@ function App() {
   return (
     <>
     <div className="main-container">
-      <h1>Recipe Descovery App</h1>
-      <button>Search</button>
+        <Navbar />
+         <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<NewRecipe />} />
+      </Routes>
     </div>
     </>
   )

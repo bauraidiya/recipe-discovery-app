@@ -64,7 +64,8 @@ app.post("/api/recipes", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
+const PORT = process.env.PORT || 8080;
 
-app.listen(8080, () => {
-    console.log("Server Started");
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });

@@ -31,7 +31,7 @@ function NewRecipe() {
     };
 
     try {
-      const response = await fetch("https://recipe-discovery-app.onrender.com", {
+      const response = await fetch("https://recipe-discovery-app.onrender.com/api/recipes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

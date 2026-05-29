@@ -13,7 +13,7 @@ function Home() {
 
   async function fetchRecipes() {
     try {
-      const response = await fetch("http://localhost:8080/api/recipes");
+      const response = await fetch("https://recipe-discovery-app.onrender.com");
 
       if (!response.ok) {
         throw new Error("Failed to fetch recipes");
